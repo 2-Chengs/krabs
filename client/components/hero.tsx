@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
@@ -8,30 +8,31 @@ export function Hero() {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-brand-purple/20 to-background" />
-      
+
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="flex flex-col items-center text-center">
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ 
+            transition={{
               type: "spring",
               stiffness: 260,
               damping: 20,
-              duration: 1.5 
+              duration: 1.5,
             }}
             className="relative w-72 h-72 md:w-96 md:h-96 mb-8"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-pink to-brand-yellow rounded-full blur-3xl opacity-30 animate-pulse" />
             <Image
-              src="/image.png"
+              src="/crab-rave-token-logo.png"
               alt="CrabRave Token"
-              fill
+              width={384}
+              height={384}
               className="object-contain animate-float"
               priority
             />
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -44,15 +45,11 @@ export function Hero() {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto">
-              Join the most 🔥 crypto revolution where memes meet DeFi! 
-              Let&apos;s make waves together! 🦀 🚀
+              Join the most 🔥 crypto revolution where memes meet DeFi! Let&apos;s make waves together! 🦀 🚀
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-              <Button
-                size="lg"
-                className="relative group text-lg"
-              >
+              <Button size="lg" className="relative group text-lg">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-brand-cyan to-brand-pink rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
                 <span className="relative px-8 py-4 bg-background rounded-lg text-white group-hover:text-brand-cyan transition-colors">
                   Buy CrabRave 🚀
@@ -100,3 +97,5 @@ export function Hero() {
     </div>
   )
 }
+
+
