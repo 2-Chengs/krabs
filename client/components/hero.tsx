@@ -24,7 +24,7 @@ export function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-pink to-brand-yellow rounded-full blur-3xl opacity-30 animate-pulse" />
             <Image
-              src="/crab-rave-token-logo.png"
+              src="/crab-rave-logo.png"
               alt="CrabRave Token"
               width={384}
               height={384}
