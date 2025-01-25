@@ -1,14 +1,14 @@
-"use client"
+'use client'
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Twitter, MessageCircle, Github } from "lucide-react"
+import { Twitter, MessageCircle, Github } from 'lucide-react'
 
 export function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/10">
       <div className="absolute inset-0 bg-gradient-to-b from-background to-brand-purple/20" />
-
+      
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <motion.div
@@ -21,10 +21,11 @@ export function Footer() {
               CrabRave Token
             </h3>
             <p className="text-white/60">
-              Join the most exciting meme token in the crypto space. Let's make waves together! 🦀 🚀
+              Join the most exciting meme token in the crypto space. 
+              Let&apos;s make waves together! 🦀 🚀
             </p>
           </motion.div>
-
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -50,7 +51,7 @@ export function Footer() {
               </li>
             </ul>
           </motion.div>
-
+          
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -59,19 +60,31 @@ export function Footer() {
           >
             <h3 className="text-xl font-bold text-white mb-4">Join Community</h3>
             <div className="flex space-x-4">
-              <Button variant="ghost" size="icon" className="text-brand-cyan hover:text-brand-pink hover:bg-white/5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-brand-cyan hover:text-brand-pink hover:bg-white/5"
+              >
                 <Twitter className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-brand-cyan hover:text-brand-pink hover:bg-white/5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-brand-cyan hover:text-brand-pink hover:bg-white/5"
+              >
                 <MessageCircle className="w-5 h-5" />
               </Button>
-              <Button variant="ghost" size="icon" className="text-brand-cyan hover:text-brand-pink hover:bg-white/5">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="text-brand-cyan hover:text-brand-pink hover:bg-white/5"
+              >
                 <Github className="w-5 h-5" />
               </Button>
             </div>
           </motion.div>
         </div>
-
+        
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -85,4 +98,3 @@ export function Footer() {
     </footer>
   )
 }
-

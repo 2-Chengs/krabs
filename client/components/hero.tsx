@@ -1,6 +1,5 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -25,7 +24,7 @@ export function Hero() {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-brand-cyan via-brand-pink to-brand-yellow rounded-full blur-3xl opacity-30 animate-pulse" />
             <Image
-              src="/crab-rave-logo.png"
+              src="/image.png"
               alt="CrabRave Token"
               fill
               className="object-contain animate-float"
@@ -46,7 +45,7 @@ export function Hero() {
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-2xl mx-auto">
               Join the most 🔥 crypto revolution where memes meet DeFi! 
-              Let's make waves together! 🦀 🚀
+              Let&apos;s make waves together! 🦀 🚀
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">

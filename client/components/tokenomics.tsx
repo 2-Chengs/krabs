@@ -1,22 +1,22 @@
-"use client"
+'use client'
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/card"
-import { CircleDollarSign, Percent, Wallet, PieChartIcon as ChartPie } from "lucide-react"
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from "recharts"
+import { CircleDollarSign, Percent, Wallet } from 'lucide-react'
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts'
 
 const tokenomicsData = [
-  { name: "Liquidity Pool", value: 40, color: "#00FFFF" },
-  { name: "Community Rewards", value: 30, color: "#FF00FF" },
-  { name: "Development", value: 20, color: "#FF4D79" },
-  { name: "Marketing", value: 10, color: "#FFE600" },
+  { name: 'Liquidity Pool', value: 40, color: '#00FFFF' },
+  { name: 'Community Rewards', value: 30, color: '#FF00FF' },
+  { name: 'Development', value: 20, color: '#FF4D79' },
+  { name: 'Marketing', value: 10, color: '#FFE600' },
 ]
 
 export function Tokenomics() {
   return (
     <section id="tokenomics" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-brand-purple/20 to-background" />
-
+      
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -113,12 +113,12 @@ function TokenomicsCard({
 }) {
   return (
     <div className="relative group">
-      <div
-        className={`absolute -inset-0.5 bg-gradient-to-r ${gradient} rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient`}
-      ></div>
+      <div className={`absolute -inset-0.5 bg-gradient-to-r ${gradient} rounded-xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient`}></div>
       <Card className="relative p-6 bg-background/80 backdrop-blur-xl border-white/10 group-hover:border-white/20">
         <div className="flex items-center gap-4">
-          <div className={`bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>{icon}</div>
+          <div className={`bg-gradient-to-r ${gradient} bg-clip-text text-transparent`}>
+            {icon}
+          </div>
           <div>
             <h3 className="text-lg font-semibold text-white">{title}</h3>
             <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-cyan to-brand-pink">
@@ -131,4 +131,3 @@ function TokenomicsCard({
     </div>
   )
 }
-
